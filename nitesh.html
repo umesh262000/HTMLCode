@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form_validation</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+  <div class="form-validate">
+    <h2 class="form-heading">Customer registration form</h2>
+    <form class="form" name="form">
+      <p class="name">First Name:</p><input type="text" required id="input1" name="fname">
+      <p class="name">Last Name:</p><input type="text" required id="input2" name="lname">
+      <p class="name">Email:</p><input type="email" required id="input3" name="email">
+      <p id="email"></p>
+      <p class="name">Password:</p><input type="password" required id="input4" name="password">
+      <p id="password"></p>
+      <p><input id="display" type="button" value="Submit" onclick="addata()"><span><input type="button" value="show" onclick="showdata()"></span>
+        <span><input id="btn" type="button" value="Reset"onclick="reset()"></span></p>
+    </form>
+  </div>
+  <div class=Table>
+    <table id="table">
+      <tr>
+        <th>First-Name</th>
+        <th>Last-name</th>
+        <th>Email</th>
+        <th>Delete</th>
+      </tr>
+    </table>
+  </div>
+  
+  
+  <p id="demo"></p>
+  <script src="form.js"></script>
+  <script>showdata()</script>
+  
+</body>
+
+</html>
